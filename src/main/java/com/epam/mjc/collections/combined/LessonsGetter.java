@@ -24,8 +24,8 @@ public class LessonsGetter {
         String[] q = s.split(",");
 
         Set<String> qwq = new HashSet<>(List.of(q));
-        Set<String> result = Collections.unmodifiableSet(qwq);
+        Set<String> res = Set.copyOf(qwq);
 
-        return result;
+        return res;
     }
 }
