@@ -8,8 +8,8 @@ import java.util.Collections;
 
 public class LessonsGetter {
     public Set<String> getLessons(Map<String, List<String>> timetable) {
-          Set<String> qwe = new HashSet<>();
-
+        Set<String> qwe = new HashSet<>();
+        
         for (Map.Entry<String, List<String>> entry : timetable.entrySet()) {
             qwe.add(String.valueOf(timetable.values()));
         }
@@ -24,8 +24,8 @@ public class LessonsGetter {
         String[] q = s.split(",");
 
         Set<String> qwq = new HashSet<>(List.of(q));
-        Set<String> qw = Collections.unmodifiableSet(qwq);
+        Set<String> result = Collections.unmodifiableSet(qwq);
 
-        return qw;
+        return result;
     }
 }
