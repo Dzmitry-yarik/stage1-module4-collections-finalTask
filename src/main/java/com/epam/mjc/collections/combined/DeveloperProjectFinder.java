@@ -1,5 +1,6 @@
 package com.epam.mjc.collections.combined;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
