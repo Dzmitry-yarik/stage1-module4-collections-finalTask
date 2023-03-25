@@ -1,14 +1,13 @@
 package com.epam.mjc.collections.combined;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Arrays;
-import java.util.HashSet;
 
 public class LessonsGetter {
     public Set<String> getLessons(Map<String, List<String>> timetable) {
-        Set<String> qwe = new HashSet<>();
+          Set<String> qwe = new HashSet<>();
 
         for (Map.Entry<String, List<String>> entry : timetable.entrySet()) {
             qwe.add(String.valueOf(timetable.values()));
@@ -23,7 +22,7 @@ public class LessonsGetter {
         s = s.replace(" ", "");
         String[] q = s.split(",");
 
-        Set<String> qw = new HashSet<>(Arrays.asList(q));
+        Set<String> qw = new HashSet<>(List.of(q));
 
         return qw;
     }
